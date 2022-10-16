@@ -46,6 +46,7 @@ body {
 
 .top__icon {
     font-size: 50px;
+    animation: rotate infinite 3s;
 }
 
 .container {
@@ -91,7 +92,7 @@ body {
     position: relative;
 }
 
-.menu__link::after{
+.menu__link::after {
     position: absolute;
     content: '';
     width: 0%;
@@ -104,11 +105,20 @@ body {
     transform: translateX(-50%);
 }
 
-.menu__link:hover{
+.menu__link:hover {
     color: #ED8E00;
-    
+
 }
-.menu__link:hover.menu__link::after{
+
+.menu__link:hover.menu__link::after {
     width: 100%;
 }
 
+@keyframes rotate {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
