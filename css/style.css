@@ -131,7 +131,7 @@ body {
 .banner {
     height: 80%;
     position: relative;
-    background: url(../img/banner.png) no-repeat center/cover;
+    background: url(../img/banner.png) no-repeat center right/cover;
     z-index: 10;
 }
 
