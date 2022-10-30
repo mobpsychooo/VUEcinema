@@ -4,6 +4,10 @@
         justify-content: center;
         align-items: center;
     }
+    
+    .trailer__post{
+        width: 100%;
+    }
 }
 
 
